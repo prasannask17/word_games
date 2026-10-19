@@ -15,11 +15,5 @@
       "src": "/(.*)",
       "dest": "frontend.py"
     }
-  ],
-  "functions": {
-    "frontend.py": {
-      "memory": 1024,
-      "maxDuration": 60
-    }
-  }
+  ]
 }
