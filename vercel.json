@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "frontend.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "frontend.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "frontend.py"
+    }
+  ],
+  "functions": {
+    "frontend.py": {
+      "memory": 1024,
+      "maxDuration": 60
+    }
+  }
+}
