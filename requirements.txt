@@ -1,0 +1,6 @@
+reportlab
+wordfreq
+better-profanity
+fastapi
+uvicorn
+python-multipart
